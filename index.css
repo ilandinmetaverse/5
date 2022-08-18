@@ -1,0 +1,520 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+}
+
+.background {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    z-index: -10;
+
+    display: flex;
+}
+    .background1 {
+        box-sizing: border-box;
+        width: 120px; height: 40px;
+
+        background-color: rgb(145, 134, 243);
+
+        opacity: 0.5;
+    }
+    .background2 {
+        box-sizing: border-box;
+        flex: 1; height: 40px;
+
+
+        background-color: rgb(145, 134, 243);
+        
+        opacity: 0.5;
+    }
+
+header {
+    box-sizing: border-box;
+    width: 100%; height: 40px;
+
+    display: flex;
+
+}
+    .header_logo {
+        box-sizing: border-box;
+
+        width: 120px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+    }
+        .header_logo i {
+            color: aliceblue;
+            z-index: 100;
+        }
+        .header_logo_name {
+            color: aliceblue;
+
+            font-weight: bolder;
+            font-size: 22px;
+
+            padding-left: 1px;
+
+            text-decoration: none;
+        }
+    .header_intro {
+        flex: 1;
+
+        display: none;
+
+        
+        color: rgb(47, 42, 105);
+
+        opacity: 0.8;
+    }
+        .header_intro span {
+            font-weight: bolder;
+            font-size: 110%;
+        }
+
+
+.main_container {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 93.7vh;
+    bottom: 0;
+}
+    .message_container {
+        box-sizing: border-box;
+
+        height: 70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        overflow: hidden;
+
+        margin-left: 3.5%;
+    }
+        .message1 {
+            position: absolute;
+            bottom: 29%;
+            color: aliceblue;
+            
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 18px;
+            
+            margin-left: 2%;
+        }
+            .message1 span {
+                color: rgb(145, 134, 243);
+                
+                font-size: 22px;
+            }
+        .message2 {
+            color:white;
+
+            font-weight: bolder;
+            font-style: italic;
+            font-size: 36px;
+
+            margin-left: 12px;
+            margin-top: 100px;
+        }
+            .message2 span {
+                color: rgb(145, 134, 243);
+            }
+    
+    .image_container  {
+        box-sizing: border-box;
+
+        margin-top: 1%;
+        margin-left: 3%;
+    }
+        .image_box {
+            box-sizing: border-box;
+
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content: space-around;
+        }
+            .image_box1 {
+                box-sizing: border-box;
+
+                width: 16%; height: 20vh;
+            }
+                .img_box1 {
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 16%;
+                    height: 20vh;
+                    border-radius: 10%;
+
+                    z-index: 5;
+                }
+                .intro_box1 {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 16%; height: 20vh;
+                    background-color: rgb(47, 42, 105);
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 10%;
+                }
+                    .intro_box1 span {
+                        color: white;
+                        z-index: 3;
+                        
+                        font-weight: bolder;
+
+                        font-size: 100%;
+                    }
+            .image_box2 {
+                box-sizing: border-box;
+
+                width: 16%; height: 20vh;
+            }
+                .img_box2 {
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 16%;
+                    height: 20vh;
+                    border-radius: 10%;
+
+                    z-index: 5;
+                }
+                .intro_box2 {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 16%; height: 20vh;
+                    background-color: rgb(47, 42, 105);
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 10%;
+                }
+                    .intro_box2 span {
+                        color: white;
+                        z-index: 3;
+                        
+                        font-weight: bolder;
+
+                        font-size: 100%;
+                    }
+            .image_box3 {
+                box-sizing: border-box;
+
+                width: 16%; height: 20vh;
+            }
+                .img_box3 {
+                    position: absolute;
+                    box-sizing: border-box;
+                    width: 16%;
+                    height: 20vh;
+                    border-radius: 10%;
+
+                    z-index: 5;
+                }
+                .intro_box3 {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 16%; height: 20vh;
+                    background-color: rgb(47, 42, 105);
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 10%;
+                }
+                    .intro_box3 span {
+                        color: white;
+                        z-index: 3;
+                        
+                        font-weight: bolder;
+
+                        font-size: 100%;
+                    }
+            .image_upload {
+                box-sizing: border-box;
+                width: 30%; height: 20vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .upload_box {
+                    box-sizing: border-box;
+                    width: 190px;
+                    height: 100%;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    .upload_box a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .upload_plus {
+                        color: rgb(145, 134, 243);
+                    }
+                        .upload_plus i {
+                            font-size: 25px;
+                        }
+                    .upload_click {
+                        position: absolute;
+                        background-color:rgb(145, 134, 243);
+                        margin-left:60px;
+
+                        width: 120px;
+                        height: 20vh;
+
+                        border-radius: 10px;
+
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        
+                        opacity: 0.7;
+                    }
+                    .upload_clickbox {
+                        position: relative;
+                        margin-left: 40px;
+                        
+                        z-index: 3;
+                    }
+                        .clickbox1 {
+                            display: none;
+                        }
+                        .clickbox2 {
+                            z-index: 3;
+                            
+                            font-weight: bolder;
+                            font-size: 130%;
+                            text-align: center;
+                        }
+                    .upload_box a:hover {
+                            color: black;
+                        }
+            img {
+                width: 100%; height: 100%; 
+                border-radius: 10%;  
+            }
+                img:hover {
+                    opacity: 0.1;
+                }
+
+video {
+    position: fixed;
+    right: 0; bottom: 0;
+    min-width: 100%; min-height: 0;
+    width: auto; height: auto;
+    z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 500px){
+    body {
+        background-color: aliceblue;
+    }
+
+    video {
+        opacity: 0.5;
+    }
+    
+    .background1 {
+        opacity: 0.8;
+    }
+    .background2 {
+        opacity: 0.8;
+    }
+
+    .header_logo a i {
+        color: black;
+    }
+    .header_logo a {
+        color: black;
+    }
+    .header_intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: black;
+    }
+        .header_intro span {
+            font-weight: bolder;
+            font-size: 90%;
+        }
+
+    .message_container {
+        position: absolute;
+        width: 100%; height: 93.5vh;
+        margin: 0; padding: 0;
+        bottom: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+        .message2 {
+            display: none;
+        }
+        .message1 {
+
+            position: absolute;
+            margin: 0; 
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+
+            color: black;
+
+
+            text-align: center;
+            
+            font-size: 18px;
+            font-style: italic;
+        }
+            .message1 span {
+                width: 120px;
+                border-radius: 10px;
+
+                text-align: center;
+                color: black;
+                
+                font-size: 18px;
+            }
+    .image_container {
+        margin: 0;
+
+        height: 91.5%;
+    }
+        .image_box {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image_box1 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .img_box1 {
+                width: 150px;
+                height: 150px;
+            }
+                .intro_box1 {
+                    width: 150px;
+                    height: 150px;
+                }
+        .image_box2 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .img_box2 {
+                box-sizing: border-box;
+                margin: 0;
+                width: 150px;
+                height: 150px;
+            }
+                .intro_box2 {
+                    width: 150px;
+                    height: 150px;
+                }
+        .image_box3 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .img_box3 {
+                box-sizing: border-box;
+                margin: 0;
+                width: 150px;
+                height: 150px;
+            }
+                .intro_box3 {
+                    width: 150px;
+                    height: 150px;
+                }
+        .image_upload {
+            border-radius: 10px;
+
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .upload_box {
+                width: 150px;
+                height: 150px;
+            }
+            .upload_plus {
+                display: none;
+            }
+            .upload_click {
+                margin: 0;
+                width: 150px;
+                height: 150px;
+                opacity: 1;
+            }
+            .upload_clickbox {
+                box-sizing: border-box;
+                margin:0;
+
+                width: 150px;
+                height: 150px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .clickbox1 {
+                    display: flex;
+
+                    margin-right: 3px;
+                }
+                    .clickbox1 i {
+                        font-size: 25px;
+                        font-weight: bolder;
+                        opacity: 1;
+                    }
+                .clickbox2 {
+                    margin-left: 3px;
+                }
+            .upload_clickbox:hover {
+                color: black;
+            }
+            
+        img {
+            box-sizing: border-box;
+            width: 100%;
+        }
+}
